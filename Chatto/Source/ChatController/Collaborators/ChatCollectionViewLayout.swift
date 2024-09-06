@@ -115,7 +115,7 @@ open class ChatCollectionViewLayout: UICollectionViewLayout {
             if attribute.frame.intersects(rect) {
                 return .orderedSame
             }
-            if attribute.frame.minY > rect.maxY {
+            if attribute.frame.minY >= rect.maxY {
                 return .orderedDescending
             }
             return .orderedAscending
